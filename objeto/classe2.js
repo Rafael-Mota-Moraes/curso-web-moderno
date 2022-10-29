@@ -4,8 +4,6 @@ class Avo {
   }
 }
 
-// TESTEE
-
 class Pai extends Avo {
   constructor(sobrenome, profissao = "Professor") {
     super(sobrenome);
