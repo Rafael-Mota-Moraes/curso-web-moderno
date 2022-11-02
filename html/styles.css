@@ -18,6 +18,7 @@ header {
 .menu-links {
   background-color: #ddd;
   display: flex;
+  flex-wrap: wrap;
   padding: 20px 20px;
   gap: 16px;
 }
