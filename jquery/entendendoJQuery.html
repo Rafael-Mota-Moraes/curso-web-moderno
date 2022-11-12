@@ -9,11 +9,24 @@
 </head>
 
 <body class="conteudo exercicio">
-    <h1>Entendendo jQuery</h1>
+    <h1 onclick="esconderDivs()">Entendendo jQuery</h1>
     <div>1</div>
     <div>2</div>
 
     <script>
-        // ...
+        function esconderDivs() {
+            $('div').hide(300).show(300).fadeOut(300).show(3000)
+        }
+
+        console.log($('div').get(0))
+        console.log($.isEmptyObject({  }));
+        console.log(jQuery.inArray(3, [1,2,3]));
+
+        $.fn.fundoVerde = function() {
+            this.css('background-color', 'green')
+        }
+
+        $('body').fundoVerde()
+
     </script>
 </body>
